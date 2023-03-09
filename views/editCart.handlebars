@@ -16,7 +16,7 @@
 
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#"> <strong class="sena"><i>SENA</i></strong><strong><i>BANK</i></strong></a>
+      <a class="navbar-brand" href="#"> <strong class="sena"><i>ECONOMIC</i></strong><strong><i>FIT</i></strong></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -33,12 +33,10 @@
           <li class="nav-item">
             <a class="nav-link " href="/dados">Dados</a>
           </li>
-          <li class="nav-item ">
-            <a class="nav-link" href="/squad">Squad </a>
-          </li>
+          
         </ul>
         <a href="/busca"><button type="submit" style="width: 94px;
-    height: 37px;" class="btn btn-warning">Pesquisar</button></a>
+    height: 37px;" class="btn btn-warning">buscar</button></a>
         </form>
       </div>
     </nav>
@@ -46,7 +44,7 @@
 
   <div class="form">
     <div class="margem">
-      <h1>Editar Cartão</h1>
+      <h1>Editar funcionario</h1>
 
       <form action="/alterar/updateclient" method="post">
         <div class="form-group">
@@ -55,50 +53,21 @@
         </div>
 
         <div class="form-group">
-          <label for="exampleInputCpf1">Número do cartão:</label>
-          <input type="text" class="form-control" name="numero_do_cartao" placeholder="Digite o número do cartão"
+          <label for="exampleInputCpf1">Número do funcionario:</label>
+          <input type="text" class="form-control" name="numero_do_cartao" placeholder="Digite o número do funcionario"
             value="{{cartao.numero_do_cartao}}">
         </div>
 
-        <div class="form-group">
-          <label for="exampleInputEmail1">Código de segurança:</label>
-          <input class="form-control" name="coddeseg" placeholder="Digite o código de segurança"
-            value="{{cartao.coddeseg}}">
-        </div>
 
         <div class="form-group">
-          <label for="exampleInputEmail1">Data de validade:</label>
-          <input class="form-control" name="dataexp" placeholder="Digite a data de validade do cartão"
-            value="{{cartao.dataexp}}">
-        </div>
-
-        <div class="form-group">
-          <label for="exampleInputEmail1">Tipo de cartão:</label>
-          <input class="form-control" name="tipodecartao" placeholder="Digite o tipo de cartão"
-            value="{{cartao.tipodecartao}}">
-        </div>
-
-        <div class="form-group">
-          <label for="exampleInputEmail1">Limite:</label>
-          <input class="form-control" name="limitecartao" placeholder="Digite o limite do cartão"
-            value="{{cartao.limitecartao}}">
-        </div>
-
-        <div class="form-group">
-          <label for="exampleInputEmail1">Saldo:</label>
-          <input class="form-control" name="saldocartao" placeholder="Digite o saldo do cartão"
-            value="{{cartao.saldocartao}}">
-        </div>
-
-        <div class="form-group">
-          <label for="exampleInputEmail1">Nome do cliente:</label>
-          <input class="form-control" name="nome_cliente" placeholder="Digite o nome do cliente"
+          <label for="exampleInputEmail1">Nome do funcionario:</label>
+          <input class="form-control" name="nome_cliente" placeholder="Digite o nome do funcionario"
             value="{{cartao.nome_cliente}}">
         </div>
 
         <div class="form-group">
           <label for="exampleInputEmail1">CPF:</label>
-          <input class="form-control" name="cpf" placeholder="Digite o CPF do cliente" value="{{cartao.cpf}}">
+          <input class="form-control" name="cpf" placeholder="Digite o CPF do funcionario" value="{{cartao.cpf}}">
         </div>
 
         <div class="form-group">

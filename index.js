@@ -34,6 +34,7 @@ app.get('/cadastro', (req, res) => {
     res.render('cadastro', { layout: false })
 })
 
+
 //rota do buscar
 app.get('/busca', (req, res) => {
     res.render('busca', { layout: false })
@@ -812,10 +813,10 @@ app.post('/login', (req, res) => {
 //conexao com o banco de dados
 const conn = mysql.createConnection({
     host: 'localhost',
-    port: '3307',
+    port: '3306',
     user: 'root',
     password: '',
-    database: 'banco'
+    database: 'economicfit'
 
 })
 

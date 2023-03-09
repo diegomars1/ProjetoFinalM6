@@ -17,7 +17,7 @@ a {
 }
 
 a:hover {
-    color: inherit;
+    color: #0085d5;
 }
 
 .btn-outline-warning {
@@ -27,7 +27,7 @@ a:hover {
 }
 
 .btn-warning {
-    background-color: #ff6600;
+    background-color: #ffffff;
 }
 
 .form {

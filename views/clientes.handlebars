@@ -16,7 +16,7 @@
 
     <header>
         <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#"> <strong class="sena"><i>SENA</i></strong><strong><i>BANK</i></strong></a>
+            <a class="navbar-brand" href="#"> <strong class="sena"><i>ECONOMIC</i></strong><strong><i>FIT</i></strong></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -34,12 +34,10 @@
                     <li class="nav-item">
                         <a class="nav-link " href="/dados">Dados</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="/squad">Squad</a>
-                    </li>
+                   
                 </ul>
                   <a href="/busca"><button type="submit" style="width: 94px;
-    height: 37px;" class="btn btn-warning">Pesquisar</button></a>
+    height: 37px;" class="btn btn-warning">Buscar</button></a>
                 </form>
             </div>
         </nav>
@@ -60,13 +58,7 @@
                 <h5 class="card-title">Telefone:</h5>
                 <p class="card-text"> {{listarClie.telefone}}</p>
                 <h5 class="card-title">Endereço:</h5>
-                <p class="card-text"> {{listarClie.endereco_cliente}}</p>
-                <h5 class="card-title">Empréstimo:</h5>
-                <p class="card-text"> {{listarClie.id_do_emprestimo}}</p>
-                <h5 class="card-title">Número do cartão:</h5>
-                <p class="card-text"> {{listarClie.numero_do_cartao}}</p>
-                <h5 class="card-title">Agência:</h5>
-                <p class="card-text"> {{listarClie.id_da_agencia}}</p>
+            
 
                 <a href="/clie/edit/{{listarClie.id_do_cliente}}"><button type="button" class="btn btn-outline-warning">
                         <strong>Editar</strong></button></a>

@@ -18,7 +18,7 @@
 
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#"> <strong class="sena"><i>SENA</i></strong><strong><i>BANK</i></strong></a>
+      <a class="navbar-brand" href="#"> <strong class="sena"><i>Economic</i></strong><strong><i>Fit</i></strong></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -35,12 +35,10 @@
           <li class="nav-item">
             <a class="nav-link " href="/dados">Dados</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link " href="/squad">Squad</a>
-          </li>
+         
         </ul>
         <a href="/busca"><button type="submit" style="width: 94px;
-    height: 37px;" class="btn btn-warning">Pesquisar</button></a>
+    height: 37px;" class="btn btn-warning">Buscar</button></a>
         </form>
       </div>
     </nav>
@@ -48,40 +46,32 @@
 
 
   <div class="form">
-    <h1>Pesquisar</h1>
+    <h1></h1>
     <div class="btscad">
 
       <div class="botoes">
         <a href="#Bcl"><button type="button" style="background: none; color: #ffa700"
             class="btn btn-outline-warning">Busca de Clientes</button></a>
         <a href="#Bag"><button type="button" style="background: none; color: #ffa700"
-            class="btn btn-outline-warning">Busca de agências</button></a>
+            class="btn btn-outline-warning">Busca de academias</button></a>
 
       </div>
       <br><br>
       <div class="botoes">
         <a href="#Bco"><button type="button" style="background: none; color: #ffa700"
-            class="btn btn-outline-warning">Busca de contas</button></a>
+            class="btn btn-outline-warning">Busca de produtos</button></a>
         <a href="#Bca"><button type="button" style="background: none; color: #ffa700"
-            class="btn btn-outline-warning">Busca de cartões</button></a>
+            class="btn btn-outline-warning">Busca de funcionarios</button></a>
       </div>
       <br><br>
 
-      <div class="botoes">
-        <a href="#Bem"><button type="button" style="background: none; color: #ffa700"
-            class="btn btn-outline-warning">Busca de empréstimos</button></a>
-        <a href="#Bfu"><button type="button" style="background: none; color: #ffa700"
-            class="btn btn-outline-warning">Busca de funcionários</button></a>
-      </div>
-      <br><br>
-
-
+   
     </div>
 
-    <div class="corno">
+    <div class="C2c">
       <a name="Bcl"></a>
       <form action="/busc/" method="post">
-        <h1>Busca de clientes cadastrados</h1>
+        <h1>Busca de clientes</h1>
         <hr>
 
         <div class="form-group">
@@ -91,51 +81,33 @@
       </form>
 
       <br><br>
-<a name="Bem"></a>
-      <form action="/busque/" method="post">
 
-        <h1>Busca de empréstimos</h1>
-        <hr>
-
-        <div class="form-group">
-          <input class="form-control" type="text" placeholder="Digite o CPF do cliente" name="emprestimo" id="">
-          <br>
-          <button type="submit" value="Buscar"  class="btn btn-warning">Pesquisar</button>
-      </form>
-
-      <br><br>
+      
+      
 <a name="Bag"></a>
       <form action="/buscaA/" method="post">
 
-        <h1>Busca de agência</h1>
+        <h1>Busca de academia</h1>
         <hr>
         <div class="form-group">
-          <input class="form-control" type="text" placeholder="Digite o número da agência" name="id_da_agencia" id="">
+          <input class="form-control" type="text" placeholder="Digite o número da academia" name="id_da_agencia" id="">
           <br>
           <button type="submit"  value="Buscar" class="btn btn-warning">Pesquisar</button>
       </form>
 
       <br><br>
 <a name="Bfu"></a>
-      <form action="/buscaF/" method="post">
-
-        <h1>Busca de funcionários</h1>
-        <hr>
-        <div class="form-group">
-          <input class="form-control" placeholder="Digite o CPF do funcionário" type="text" name="id_funcionario" id="">
-          <br>
-          <button type="submit" value="Buscar" class="btn btn-warning">Pesquisar</button>
-      </form>
+      
 
       <br><br>
 <a name="Bca"></a>
       <form action="/buscacart/" method="post">
 
-        <h1>Busca de cartões</h1>
+        <h1>Busca de funcionarios</h1>
         <hr>
 
         <div class="form-group">
-          <input class="form-control" placeholder="Digite o numero do cartão " type="text" name="id_do_cartao" id="">
+          <input class="form-control" placeholder="Digite o numero do funcionario " type="text" name="id_do_cartao" id="">
           <br>
           <button type="submit" value="Buscar" class="btn btn-warning">Pesquisar</button>
         </div>
@@ -145,10 +117,10 @@
 <a name="Bco"></a>
       <form action="/buscconta/" method="post">
 
-        <h1>Busca de contas</h1>
+        <h1>Busca de produtos</h1>
         <hr>
         <div class="form-group">
-          <input class="form-control" placeholder="Digite número da conta" type="text" name="id_da_conta" id="">
+          <input class="form-control" placeholder="Digite número do produto" type="text" name="id_da_conta" id="">
           <br>
           <button type="submit" value="Buscar" class="btn btn-warning">Pesquisar</button>
         </div>
