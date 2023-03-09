@@ -17,7 +17,7 @@ npm i --save-dev nodemon
 ## 📌 Clonando e rodando a aplicação:
 
 1 - Clone o repositório
-$ git clone 
+$ git clone https://github.com/diegomars1/ProjetoFinalM6.git
 
 2 - Entre no repositório
 $ cd ProjetoFinalM6
