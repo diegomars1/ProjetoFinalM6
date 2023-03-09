@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Agências</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="/publico/css/visu.css">
+    <link rel="stylesheet" href="/publico/css/home.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#"> <strong class="sena"><i>ECONOMICFIT</i></strong><strong><i>ACADEMY</i></strong></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto container-fluid justify-content-end">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="/home">Home </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="/cadastro">Cadastrar</a>
+                    </li>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="/dados">Dados</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="/squad">Squad</a>
+                    </li>
+                </ul>
+                <a href="/busca"><button type="submit" style="width: 94px;
+    height: 37px;" class="btn btn-warning">Pesquisar</button></a>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <div class="margem">
+        <h1>Agência</h1>
+        <div class="conjunto">
+            {{#each listar}}
+
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">{{this.id_da_agencia}}</h5>
+                    <h6 class="card-subtitle mb-2 text-muted"> Endereço: {{endereco}}</h6>
+                    <p class="card-text">Email: {{email}}<br>Telefone: {{telefone}}</p>
+
+                    <button type="submit" value="Buscar" class="btn btn-outline-warning"><a
+                            href="/age/{{this.id_da_agencia}}" class="card-link"> Mais informações</a></button>
+                </div>
+            </div>
+            {{/each}}
+
+
+
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>

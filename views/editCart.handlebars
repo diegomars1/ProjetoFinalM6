@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+  <title>Editar cartões</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="/publico/css/edit.css">
+
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#"> <strong class="sena"><i>SENA</i></strong><strong><i>BANK</i></strong></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto container-fluid justify-content-end">
+          <li class="nav-item ">
+            <a class="nav-link" href="/home">Home </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="/cadastro">Cadastrar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="/dados">Dados</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="/squad">Squad </a>
+          </li>
+        </ul>
+        <a href="/busca"><button type="submit" style="width: 94px;
+    height: 37px;" class="btn btn-warning">Pesquisar</button></a>
+        </form>
+      </div>
+    </nav>
+  </header>
+
+  <div class="form">
+    <div class="margem">
+      <h1>Editar Cartão</h1>
+
+      <form action="/alterar/updateclient" method="post">
+        <div class="form-group">
+          <input class="form-control" type="hidden" name="id_do_cartao" id="id_do_cartao"
+            value="{{cartao.id_do_cartao}}">
+        </div>
+
+        <div class="form-group">
+          <label for="exampleInputCpf1">Número do cartão:</label>
+          <input type="text" class="form-control" name="numero_do_cartao" placeholder="Digite o número do cartão"
+            value="{{cartao.numero_do_cartao}}">
+        </div>
+
+        <div class="form-group">
+          <label for="exampleInputEmail1">Código de segurança:</label>
+          <input class="form-control" name="coddeseg" placeholder="Digite o código de segurança"
+            value="{{cartao.coddeseg}}">
+        </div>
+
+        <div class="form-group">
+          <label for="exampleInputEmail1">Data de validade:</label>
+          <input class="form-control" name="dataexp" placeholder="Digite a data de validade do cartão"
+            value="{{cartao.dataexp}}">
+        </div>
+
+        <div class="form-group">
+          <label for="exampleInputEmail1">Tipo de cartão:</label>
+          <input class="form-control" name="tipodecartao" placeholder="Digite o tipo de cartão"
+            value="{{cartao.tipodecartao}}">
+        </div>
+
+        <div class="form-group">
+          <label for="exampleInputEmail1">Limite:</label>
+          <input class="form-control" name="limitecartao" placeholder="Digite o limite do cartão"
+            value="{{cartao.limitecartao}}">
+        </div>
+
+        <div class="form-group">
+          <label for="exampleInputEmail1">Saldo:</label>
+          <input class="form-control" name="saldocartao" placeholder="Digite o saldo do cartão"
+            value="{{cartao.saldocartao}}">
+        </div>
+
+        <div class="form-group">
+          <label for="exampleInputEmail1">Nome do cliente:</label>
+          <input class="form-control" name="nome_cliente" placeholder="Digite o nome do cliente"
+            value="{{cartao.nome_cliente}}">
+        </div>
+
+        <div class="form-group">
+          <label for="exampleInputEmail1">CPF:</label>
+          <input class="form-control" name="cpf" placeholder="Digite o CPF do cliente" value="{{cartao.cpf}}">
+        </div>
+
+        <div class="form-group">
+          <button type="submit" value="Editar" class="btn btn-warning">Editar</button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

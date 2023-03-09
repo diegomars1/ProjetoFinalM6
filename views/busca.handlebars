@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+  <title>Buscar</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="/publico/css/busca.css">
+  <link rel="stylesheet" href="/publico/css/home.css">
+  <link rel="stylesheet" href="/publico/css/cadastro.css">
+</head>
+
+<body>
+
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#"> <strong class="sena"><i>SENA</i></strong><strong><i>BANK</i></strong></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto container-fluid justify-content-end">
+          <li class="nav-item ">
+            <a class="nav-link" href="/home">Home </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="/cadastro">Cadastrar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="/dados">Dados</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="/squad">Squad</a>
+          </li>
+        </ul>
+        <a href="/busca"><button type="submit" style="width: 94px;
+    height: 37px;" class="btn btn-warning">Pesquisar</button></a>
+        </form>
+      </div>
+    </nav>
+  </header>
+
+
+  <div class="form">
+    <h1>Pesquisar</h1>
+    <div class="btscad">
+
+      <div class="botoes">
+        <a href="#Bcl"><button type="button" style="background: none; color: #ffa700"
+            class="btn btn-outline-warning">Busca de Clientes</button></a>
+        <a href="#Bag"><button type="button" style="background: none; color: #ffa700"
+            class="btn btn-outline-warning">Busca de agências</button></a>
+
+      </div>
+      <br><br>
+      <div class="botoes">
+        <a href="#Bco"><button type="button" style="background: none; color: #ffa700"
+            class="btn btn-outline-warning">Busca de contas</button></a>
+        <a href="#Bca"><button type="button" style="background: none; color: #ffa700"
+            class="btn btn-outline-warning">Busca de cartões</button></a>
+      </div>
+      <br><br>
+
+      <div class="botoes">
+        <a href="#Bem"><button type="button" style="background: none; color: #ffa700"
+            class="btn btn-outline-warning">Busca de empréstimos</button></a>
+        <a href="#Bfu"><button type="button" style="background: none; color: #ffa700"
+            class="btn btn-outline-warning">Busca de funcionários</button></a>
+      </div>
+      <br><br>
+
+
+    </div>
+
+    <div class="corno">
+      <a name="Bcl"></a>
+      <form action="/busc/" method="post">
+        <h1>Busca de clientes cadastrados</h1>
+        <hr>
+
+        <div class="form-group">
+          <input class="form-control" placeholder="Digite o CPF do cliente" type="text" name="cpf" id="">
+          <br>
+          <button type="submit"  value="Buscar" class="btn btn-warning">Pesquisar</button>
+      </form>
+
+      <br><br>
+<a name="Bem"></a>
+      <form action="/busque/" method="post">
+
+        <h1>Busca de empréstimos</h1>
+        <hr>
+
+        <div class="form-group">
+          <input class="form-control" type="text" placeholder="Digite o CPF do cliente" name="emprestimo" id="">
+          <br>
+          <button type="submit" value="Buscar"  class="btn btn-warning">Pesquisar</button>
+      </form>
+
+      <br><br>
+<a name="Bag"></a>
+      <form action="/buscaA/" method="post">
+
+        <h1>Busca de agência</h1>
+        <hr>
+        <div class="form-group">
+          <input class="form-control" type="text" placeholder="Digite o número da agência" name="id_da_agencia" id="">
+          <br>
+          <button type="submit"  value="Buscar" class="btn btn-warning">Pesquisar</button>
+      </form>
+
+      <br><br>
+<a name="Bfu"></a>
+      <form action="/buscaF/" method="post">
+
+        <h1>Busca de funcionários</h1>
+        <hr>
+        <div class="form-group">
+          <input class="form-control" placeholder="Digite o CPF do funcionário" type="text" name="id_funcionario" id="">
+          <br>
+          <button type="submit" value="Buscar" class="btn btn-warning">Pesquisar</button>
+      </form>
+
+      <br><br>
+<a name="Bca"></a>
+      <form action="/buscacart/" method="post">
+
+        <h1>Busca de cartões</h1>
+        <hr>
+
+        <div class="form-group">
+          <input class="form-control" placeholder="Digite o numero do cartão " type="text" name="id_do_cartao" id="">
+          <br>
+          <button type="submit" value="Buscar" class="btn btn-warning">Pesquisar</button>
+        </div>
+      </form>
+
+      <br><br>
+<a name="Bco"></a>
+      <form action="/buscconta/" method="post">
+
+        <h1>Busca de contas</h1>
+        <hr>
+        <div class="form-group">
+          <input class="form-control" placeholder="Digite número da conta" type="text" name="id_da_conta" id="">
+          <br>
+          <button type="submit" value="Buscar" class="btn btn-warning">Pesquisar</button>
+        </div>
+      </form>
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

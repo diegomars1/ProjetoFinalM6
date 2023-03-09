@@ -1,0 +1,66 @@
+body {
+    background:  url(../src/img3.jpg);
+}
+
+header {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
+
+
+h2 {
+    color: white;
+    text-align: center;
+    padding-top: 4em;
+    font-size: 80px;
+}
+
+.bg-light {
+    background-color: white !important;
+}
+
+.bank {
+    color: #ff6600;
+}
+
+.sena {
+    color: #ff6600;
+}
+
+.btn {
+    color: #fff;
+    border-color: #ff6600;
+    background-color: #ff6600;
+}
+
+.navbar-brand {
+    color: black;
+    font-size: 40px;
+}
+
+.btn:focus,
+.btn:hover {
+    text-decoration: none;
+}
+
+.btn-outline-success {
+    color: white;
+}
+
+.btn-outline-success:hover {
+    color: #fff;
+    background-color: #ff6600;
+    border: 2px solid black;
+
+}
+
+.navbar-light .navbar-brand {
+    color: rgba(0, 0, 0, .9);
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #ff6600;
+    font-size: 18px;
+    padding-left: 20px;
+}

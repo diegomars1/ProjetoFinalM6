@@ -1,0 +1,41 @@
+body {
+    background: linear-gradient(rgba(17, 17, 17, 0.8), rgba(20, 20, 20, 1)), url(../img3.jpg);
+    color: #ff6600;
+}
+
+.margem h1{
+    padding-top: 3em;
+    padding-left: 1em;
+}
+
+.clientes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    color: black;
+    margin-left: 30px;
+    margin-top: 90px;
+}
+
+.conjunto {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card-title {
+    text-decoration: underline 2px #ff6600;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: inherit;
+}
